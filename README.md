@@ -1,2 +1,2 @@
-# DaisyLayout
+# AkadLayout
 layout

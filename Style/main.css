@@ -75,7 +75,7 @@
     padding-bottom: 10px;
     border: rgb(96, 96, 110) 10px solid;
 }
-.homepage_title_text{
+.heading_text{
     text-align: center;
 }
 .homepage_history{
@@ -91,12 +91,14 @@
     margin-left: 100px;
     padding: 0 1em
 }
+.history_text{
+    padding-top: 1.5em;
+}
 .heading{
     display: flex;
     align-items: center;
     height: 70px;
     margin: 0;
-    margin-bottom: 0.5em;
     font-size: 30px;
     position: relative;
     z-index: 1;
@@ -116,6 +118,43 @@
     margin-top: 13px;
     float: right;
 }
+
+.services_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-bottom: 100px;
+}
+
+.services_heading::after{
+    content: "";
+    position: absolute;
+    top: 25px;
+    width: 55px;
+    height: 23px;
+    background-color: rgb(123, 238, 199);
+}
+.services_list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.services_list_container{
+    display: flex;
+    flex-direction: column;
+}
+.services_list_row{
+    display: flex;
+    flex-direction: row;
+}
+.services_list_row2{
+    display: flex;
+    flex-direction: row;
+}
+
 .button{
     display: flex;
     align-items: center;

@@ -1,2 +1,2 @@
 # AkadLayout
-layout
+GitHub Pages: https://nazlukyanovich.github.io/AkadLayout/

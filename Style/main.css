@@ -156,6 +156,63 @@
     flex-direction: row;
 }
 
+.portfolio_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 110px;
+    margin-bottom: 85px;
+}
+
+.portfolio_heading::after{
+    content: "";
+    position: absolute;
+    top: 35px;
+    width: 55px;
+    height: 21px;
+    background-color: rgb(123, 238, 199);
+}
+
+.category_list{
+    padding-left: 1em;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.filter:hover{
+    background-color: rgb(123, 238, 199);
+    color: white;
+}
+filter:active{
+    color: white;
+}
+
+.portfolio_list_nav{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.portfolio_list{
+    display: flex;
+    justify-content: center;
+}
+.portfolio_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1170px;
+}
+.portfolio_works{
+    position: relative;
+    width: 855px;
+    padding: 0 1em;
+}
+.work{
+    padding: 0 1em;
+}
+
 .button{
     display: flex;
     align-items: center;

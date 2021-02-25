@@ -220,10 +220,9 @@ filter:active{
 }
 
 .portfolio_works{
+    display: flex;
+    flex-direction: row;
     float: left;
-    position: relative;
-    height: 900px;
-    width: 860px;
     min-height: 1px;
     padding: 0 1em;
 }
@@ -237,31 +236,27 @@ filter:active{
 }
 
 .work{
-    padding: 0 1em;
+    padding: 0 0.5em 1em 1em;
 }
 
-.work:hover .work_hover{
+.work:hover .work_info{
     opacity: 1;
     transform: translateY(-100%);
     transition: all 1s ease-in-out;
 }
 
 .work_hover{
-    position: absolute;
     display: flex;
-    align-items: center;
+    position: absolute;
     justify-content: center;
-    height: 100%;
-    width: calc(100% - 2em);
-    background-color: rgba(255,255,255, 0.9);
-    opacity: 0;
+
 }
 
 .work_info{
     display: flex;
     flex-direction: column;
     text-align: center;
-    position: absolute;
+    position: relative;
 }
 
 .hover_text{
@@ -450,15 +445,12 @@ em {
 
 
 @media screen and (max-width: 1240px) {
-    body {
-        background-color: lightcoral;
-    }
     .homepage_history_text{
         margin-left: 50px;
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1080px) {
 
     .homepage_title{
         justify-content: center;
@@ -472,14 +464,19 @@ em {
     }
 
     .homepage_history_image{
-        width: 750px;
+        width: 700px;
         height: 550px;
     }
 
     .homepage_history_text{
+        width: 700px;
         margin-top: 50px;
         margin-left: 0;
         text-align: center;
+    }
+
+    .homepage_history_button {
+        margin-top: 25px;
     }
     
     .homepage_history_heading{
@@ -487,9 +484,71 @@ em {
         justify-content: center;
     }
 
+    .homepage_history_heading::after{
+        content: "";
+        position: relative;
+        top: 30px;
+        right: 319px;
+        width: 70px;
+        height: 23px;
+        background-color: rgb(123, 238, 199);
+    }
+
     .history_text{
         display: flex;
         justify-content: center;
+    }
+
+    .services_title {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .services_list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services_list_container{
+        margin-bottom: 35px;
+    }
+
+    .list{
+        padding: 1em;
+        text-align: center;
+    }
+
+    .services_image{
+        width: 700px;
+    }
+
+    .portfolio{
+        margin-top: 150px;
+    }
+
+    .portfolio_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .portfolio_list{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .portfolio_works{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .work{
+        text-align: center;
+    }
+
+    .work_image{
+        width: 500px;
     }
 }
 

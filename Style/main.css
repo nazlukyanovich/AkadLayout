@@ -125,12 +125,15 @@
     float: right;
 }
 
+.services{
+    margin-top: 150px;
+}
+
 .services_title{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 225px;
     margin-bottom: 85px;
 }
 
@@ -167,7 +170,7 @@
 }
 
 .portfolio{
-    margin-top: 110px;
+    margin-top: 150px;
 }
 
 .portfolio_title{
@@ -219,14 +222,6 @@
 .portfolio_list{
     padding: 0 1em;
     float: left;
-}
-
-.portfolio_container{
-    height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .portfolio_works{

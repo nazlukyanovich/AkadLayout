@@ -193,13 +193,23 @@
     font-size: medium;
 }
 
-.filter:hover{
+.category:hover{
+    transition: all 0.45s ease-in-out;
+    transform: translateX(8%);
+}
+
+.category:hover .filter{
     background-color: rgb(123, 238, 199);
     color: white;
 }
 
-filter:active{
-    color: white;
+.category:active{
+    transition: all 0.5s ease-in-out;
+    transform: translateX(10%);
+}
+
+.filter{
+    padding: 0.2em 0.5em;
 }
 
 .portfolio_list_nav{
@@ -236,10 +246,11 @@ filter:active{
 }
 
 .work{
+    position: relative;
     padding: 0 0.5em 1em 1em;
 }
 
-.work:hover .work_info{
+.work:hover .work_hover{
     opacity: 1;
     transform: translateY(-100%);
     transition: all 1s ease-in-out;
@@ -247,8 +258,13 @@ filter:active{
 
 .work_hover{
     display: flex;
+    width: calc(100% - 24px);
+    height: calc(100% - 16px);
     position: absolute;
+    align-items: center;
     justify-content: center;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.8);
 
 }
 
